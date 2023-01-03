@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Interactivo JML</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="icon"   href="./imagenes/favicon.ico" type="image/x-ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  </head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navPpal">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="./index.html">Simulador Interactivo<img class="logo logo--ppal" src="./imagenes/logoSimuladorCara.jpg" alt="logo Simulador Cara" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="./apartados/contacto.html">   <img src="./imagenes/correo.jpg"            alt="sobre"       width="30" height="25" class="d-inline-block align-text-top">Contacto</a>
+            <a class="nav-link" aria-current="page" href="./apartados/prestamo.html">   <img src="./imagenes/calculadora.png"       alt="calculadora" width="30" height="25" class="d-inline-block align-text-top">Créditos Bancarios</a>
+            <a class="nav-link" aria-current="page" href="./apartados/biblioteca.html"> <img src="./imagenes/biblioteca.jpg"        alt="biblioteca"  width="30" height="25" class="d-inline-block align-text-top">Control Biblioteca</a>
+          </div>
+          <div id="divCUIT">   Cuit Seleccionado y Nombre </div>
+          <div id="divIP">     IP y Ciudad </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="justify-content-center container">
+    <button class="btn btn-success m-2" id="botonInicio">Inicio de Sesión</button>
+  </div>
+  <div class="accordion container" id="accordionExample">
+    <div class="accordion-item">            
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Simulador Interactivo de Créditos Bancarios #1 (PreEntrega 1, 2, 3 y Proyecto Final)
+        </button>          
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Cómo funciona un simulador de Préstamos Personales?</strong> Un simulador de préstamos hipotecarios o personales es una calculadora online con la que se obtiene una estimación de las cuotas y del tiempo que se deberá estar pagando el préstamo personal. Ayuda a comparar las diferentes entidades bancarias para elegir la opción que más intereses. Con la era digital se han desarrollado los simuladores de préstamos personales que la mayoría de las entidades bancarias tienen en sus páginas web y también han surgido portales de comparadores bancarios. Utilizar un simulador de créditos personales es una herramienta que servirá para:
+          Comparar las opciones que dan las diferentes entidades bancarias, conocer el nivel de endeudamiento que se alcanza, la cantidad a pagar en las cuotas mensuales y los años que se deberá estar pagando. <strong>Para esta práctica se desarrollaron tres sistemas de amortización distintos: el Sistema Alemán, el Francés y el Americano</strong>. El <mark class="match" style="background-color: rgb(41, 6, 111); color: white;"><u>Sistema de Amortización Alemán</u></mark> establece que el <strong>valor de las cuotas es variable y decreciente cada mes</strong> y hasta la cancelación total de la deuda. Lo que quiere decir que la primera cuota será la más alta de todas y la siguiente siempre será más baja que la anterior. 
+          El <mark class="match" style="background-color: rgb(41, 6, 111); color: white;"><u>Sistema de Amortización Francés</u></mark> determina que el <strong>valor de las cuotas es constante, un sistema de cuotas fijas</strong>. Esto quiere decir que todos los meses pagaremos lo mismo hasta conseguir la liquidación total del préstamo hipotecario.
+          El <mark class="match" style="background-color: rgb(41, 6, 111); color: white;"><u>Sistema de Amortización Americano</u></mark> se caracteriza por el hecho de que la <strong>totalidad del capital prestado se reintegra de una sola vez en la última cuota, mientras que durante toda la vida de la operación sólo se procede a liquidar intereses</strong>
+          <div class="row justify-content-center" >
+            <div class="col-3" >          
+              <a class="btn btn-primary" data-bs-toggle="offcanvas" href="./apartados/prestamo.html" role="button" aria-expanded="false" aria-controls="offcanvasExample">
+                    Cargar Datos 
+                <img  src="./imagenes/creditosBancarios.png"  alt="Créditos Bancarios">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------------->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Simulador Interactivo de Control de Biblioteca #2 (PreEntrega 2, 3 y Proyecto Final)
+        </button>          
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Cómo funciona un simulador de Control de Biblioteca?</strong> Ja! estamos en problemas para definirlo. Básicamente es un "CRUD" (Create, Read, Update, Delete), o el viejo ABM (Alta, Baja, Modificación). Para las entregas anteriores, el lote inicial de obras se cargaba automáticamente vía instrucciones "new". para la presente se utiliza un archivo ".json" con los datos organizados de cada obra (o libro) y la instrucción fetch (rutas relativas) para completar el proceso de cargan de datos inicial. Luego ese lote cargado se puede actualizar. Queda guardado en disco con sentencia "localStorage". Cada obra tiene un código de identificación (id). Al incorporar una nueva obra se toma el mayor valor que tiene el lote, se le suma 1, se le asigna, y el nuevo número de id se guarda en disco vía localStore, para luego reutilizarse, incrementarlo y volver a guardarlo. Se desarrolla también un sistema de selección (o filtro) de obras con características similares que se exponen, sin afectar el lote. También se pueden visualizar ordenadas según Apellido y Nombre o Título. El Sistema de Ubicación consiste en el arreglo de tres coordenadas, panel, a derecha o izquierda, subpanel, también a derecha izquierda y el nivel (o estante), entre 1 y 6, donde está físicamente la obra en la biblioteca.
+          Cabe destacar que el lote inicial de libros es el de una parte de mi biblioteca personal. Faltan incorporarle más propiedades: año de edición, editorial, código internacional ISBN, etc.
+          <div class="row justify-content-center" >
+            <div class="col-3">          
+              <a class="btn btn-primary" data-bs-toggle="offcanvas" href="./apartados/biblioteca.html" role="button" aria-expanded="false" aria-controls="offcanvasExample">
+                    Cargar Datos 
+                <img  src="./imagenes/biblioteca.jpg"  alt="Ctrl Biblioteca">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------------------------------------------------------->
+    </div>     
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../procedimientos/inicio.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador JML - Biblioteca</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="icon"   href="../imagenes/favicon.ico" type="image/x-ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"-->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">Simulador Interactivo<img src="../imagenes/logoSimuladorCara.jpg" alt="logo Simulador Cara" ></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link"          aria-current="page" href="../apartados/contacto.html">   <img src="../imagenes/correo.jpg"      alt="sobre"       width="50" height="25" class="d-inline-block align-text-top">Contacto</a>
+                            <a class="nav-link"          aria-current="page" href="../apartados/prestamo.html">   <img src="../imagenes/calculadora.png" alt="calculadora" width="30" height="25" class="d-inline-block align-text-top">Créditos</a>
+                            <a class="nav-link  fw-bold" aria-current="page" href="../apartados/biblioteca.html"> <img src="../imagenes/biblioteca.jpg"  alt="biblioteca"  width="30" height="25" class="d-inline-block align-text-top">Control Biblioteca</a>
+                    </div>
+                    <div id="divCUIT">   Cuit Seleccionado y Nombre </div>
+                    <div id="divIP">     IP y Ciudad </div>          
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="div-formulario">
+                <form action="#" id="formulario">
+                    <div>Información de la Obra</div>
+                    <input  type="text"   id="apellido"    placeholder="Ingrese el Apellido del Autor">
+                    <input  type="text"   id="nombre"      placeholder="Ingrese el Nombre del Autor">
+                    <input  type="text"   id="titulo"      placeholder="Ingrese el Título de la Obra">
+                    <input  type="text"   id="panel"       placeholder="Ingrese el Panel de Ubicación de la Obra">
+                    <input  type="text"   id="subpanel"    placeholder="Ingrese el SubPanel de Ubicación de la Obra">
+                    <input  type="text"   id="nivel"       placeholder="Ingrese el Nivel de Ubicación de la Obra">
+                    <button type="submit" id="btnAgregar">Agregar</button> 
+                </form>
+            </div>   
+            <div class="container overflow-scroll">
+                <table class="tab table table-danger table-striped table-hover table-bordered border-primary table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="align-middle">
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dmaM','codigo')">Ʌ</button>
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dMam','codigo')">V</button>
+                            </th>
+                            <th scope="col"  class="align-middle">
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dmaM','autor')">Ʌ</button>
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dMam','autor')">V</button>
+                            </th>
+                            <th scope="col" class="align-middle" >
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dmaM','titulo')">Ʌ</button>
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dMam','titulo')">V</button>
+                            </th>
+                            <th scope="col" class="align-middle"> 
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dmaM','panel')">Ʌ</button>
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dMam','panel')">V</button>
+                            </th>
+                            <th scope="col" class="align-middle">   
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dmaM','subpanel')">Ʌ</button>
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dMam','subpanel')">V</button>
+                            </th>
+                            <th scope="col" class="align-middle">   
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dmaM','nivel')">Ʌ</button>
+                                <button type="button" class="btn btn-light btn-sm" onclick="ordenObra('dMam','nivel')">V</button>
+                            </th>
+                            <th scope="col">   
+                            </th>                    
+                            <th scope="col"> 
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="align-middle">
+                            </th>
+                            <th scope="col"  class="align-middle">
+                                <input  type="text" class="filtroApellido" size="15" id="fApellido" placeholder="Ingrese letras para filtrar">
+                                <button type="submit" class="btn btn-light btn-sm" onclick="seleObra('autor')">Filtrar</button>
+                            </th>
+                            <th scope="col" class="align-middle" >
+                                <input  type="text" class="filtroTitulo" size="15" id="fTitulo" placeholder="Ingrese letras para filtrar">
+                                <button type="submit" class="btn btn-light btn-sm" onclick="seleObra('titulo')">Filtrar</button>
+                            </th>
+                            <th scope="col" class="align-middle"> 
+                            </th>
+                            <th scope="col" class="align-middle">   
+                            </th>
+                            <th scope="col" class="align-middle">   
+                            </th>
+                            <th scope="col">   
+                            </th>                    
+                            <th scope="col"> 
+                                <button type="submit" class="btn btn-light btn-sm" onclick="eliminarFiltros()">Eliminar Filtros</button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Id  </th>
+                            <th scope="col">Autor   </th>
+                            <th scope="col">Título  </th>
+                            <th scope="col">Panel   </th>
+                            <th scope="col">SubPanel</th>
+                            <th scope="col">Nivel   </th>
+                            <th scope="col">Editar  </th>
+                            <th scope="col">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tab" class="table-xl">
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>    
+    </main>
+        <!----------------------------------------------------------------->
+        <footer>
+        </footer>
+        <!----------------------------------------------------------------->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="../procedimientos/biblioteca.js"></script>
+        <!----------------------------------------------------------------->
+</body>
+</html>

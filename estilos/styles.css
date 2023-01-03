@@ -1,0 +1,112 @@
+/*Defino la grilla de contacto.html*/
+.explicacionContacto {
+  grid-area: explicacionContacto;
+}
+
+.grillaContacto {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: "cabecera" "deseo" "explicacionContacto" "pie";
+}
+
+.explicacionContacto {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+
+/*Formulario de Contacto*/
+.iniform {
+  margin-top: 25px;
+  font-weight: normal;
+  font-size: large;
+}
+
+.finform {
+  margin-bottom: 50px;
+}
+
+div.row {
+  padding: 5px;
+  margin: 5px;
+  font-weight: normal;
+}
+
+fieldset {
+  border: #173441 2px solid;
+  border-radius: 10px;
+  background-color: #d1ddbe;
+}
+
+.form {
+  width: 550px;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+
+.tablita {
+  border: darkblue double 5px;
+  padding-top: 1%;
+}
+
+#divCUIT {
+  border: darkblue double 5px;
+}
+
+#divIP {
+  border: darkblue double 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: bisque;
+}
+
+.contenedor {
+  padding-left: 1%;
+  width: 99%;
+  height: calc(95vh - 100px);
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos Formulario */
+.contenedor .div-formulario {
+  width: 25%;
+  height: 500px;
+  background-color: rgb(135, 135, 135);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor .div-formulario form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor .div-formulario form input,
+.contenedor .div-formulario form buttom {
+  width: 90%;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/*Fin del SCSS--------------------------------*//*# sourceMappingURL=styles.css.map */

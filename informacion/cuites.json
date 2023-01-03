@@ -1,0 +1,7 @@
+[
+{"cuit":  10987654321, "nombre": "El primero no funciona!!!!"       },  
+{"cuit":  20368469565, "nombre": "LASAGNI VITAR FRANCO MARIO"       },  
+{"cuit":  23108948949, "nombre": "LASAGNI JORGE MARIO"              },
+{"cuit":  12345678901, "nombre": "CUIT COMODÍN para pruebas"        },
+{"cuit":  23134676884, "nombre": "VITAR LILIANA OFELIA"             }
+]

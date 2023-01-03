@@ -1,0 +1,34 @@
+/*Defino la grilla de contacto.html*/
+.explicacionContacto{
+    grid-area: explicacionContacto;
+}
+.grillaContacto{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "cabecera"
+        "deseo"
+        "explicacionContacto"
+        "pie";
+}
+.explicacionContacto{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
+/*Formulario de Contacto*/
+.iniform{
+    margin-top: 25px;
+    font-weight: normal;
+    font-size: large;
+}
+.finform{
+    margin-bottom: 50px;
+}
+div.row{
+padding: 5px;
+margin: 5px;
+font-weight: normal;
+}
